@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+html, body{
+	height: 100%;
+	background-color: #292929;
+}
+
+div.clear{
+	clear: both;
+}
+
+div.center{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+/* BEGIN HEADER STYLE */
+
+section.cover-container{
+	width: 90%;
+	height: 85vh;
+	margin: 60px auto;
+	padding: 20px 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url('../imagens/cover2.png');
+}
+
+section.cover-container > div.center{
+	height: 100%;
+}
+
+div.cover-top{
+	height: 40%;
+}
+
+div.cover-middle{
+	height: 40%;
+}
+
+div.cover-bottom{
+	height: 20%;
+}
+
+div.logo{
+	width: 100%;
+	margin-top: 20px; 
+	text-align: center;
+}
+
+div.logo img{
+	width: 15%;
+}
+
+div.main-menu{
+	width: 10%;
+	float: right;
+	cursor: pointer;
+	text-align: center;
+}
+
+div.main-menu img{
+	width: 32px;
+	margin: 0 auto;
+}
+
+div.main-menu span{
+	font-weight: 600;
+	font-size: 13px;
+	margin: 0 auto;
+}
+
+nav.cover-menu{
+	width: 50%;
+	float: left;
+	text-align: left;
+	padding-top: 50px;
+}
+
+nav.cover-menu li{
+	display: inline-block;
+	margin-right: -4px;
+	background-color: rgba(0,0,0,0.5);
+	transition: 0.3s;
+}
+
+nav.cover-menu li:hover{
+	background-color: rgba(80,80,80,1);
+}
+
+nav.cover-menu li a{
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+	font-weight: 700;
+	padding: 0 20px;
+	letter-spacing: 2px;
+}
+
+div.slider-bullets{
+	width: 50%;
+	float: right;
+	text-align: right;
+	padding-top: 60px;
+}
+
+div.slider-bullets span{
+	width: 65px;
+	height: 5px;
+	float: right;
+	margin-right: 8px;
+	cursor: pointer;
+	background-color: rgba(200,200,200,0.5);	
+}
+
+div.find-more{
+	text-align: center;
+	padding-top: 40px;
+}
+
+div.find-more span{
+	padding: 0 20px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+div.find-more span:hover{
+	background-color: rgba(80,80,80,1);	
+}
+
+section.arrow-icon{
+	text-align: center;
+
+}
+
+section.arrow-icon img{
+	position: relative;
+	top: -50px;
+}
+
+/* END HEADER STYLE */
+
+div.box{
+	width: 400px;
+	height: 400px;
+	float: left;
+	text-align: center;
+	position: relative;
+	background-color: rgba(10,10,10,0.3);
+}
+
+.box img{
+	width: 90%;
+	height: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	-webkit-transition: 1s width, 1s height;
+	transition: 1s width, 1s height;
+}
+
+.box img:hover{
+	width: 100%;
+	height: 100%;
+}
